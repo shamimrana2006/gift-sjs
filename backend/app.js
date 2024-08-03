@@ -2,9 +2,11 @@ const express = require("express")
 const app = express()
 
 
-app.listen(3003,()=>{
-    console.log("server is running on port 3003")
+
+app.get("/shuktara" ,(req,res)=>{
+    res.json({
+        "shamim" : "shuktara"
+    })
 })
 
-
-module
+module.exports = app
